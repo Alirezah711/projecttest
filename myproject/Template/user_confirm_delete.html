@@ -1,0 +1,8 @@
+{% extends 'main.html'%} {% block content%}
+<div class="container"><a href="{% url 'user'%}">back</a>
+    <form method="POST">
+        {% csrf_token %}
+        <p>را حذف کنید؟"{{Userdb.Name}} {{Userdb.family}}"ایا میخواهید</p>
+        <input type="submit" value="Delete" /></form>
+</div>
+{% endblock content %}

@@ -1,0 +1,13 @@
+{% extends 'main.html'%} {% block content%}
+
+<h1>فرم</h1>
+<a href="{% url 'user'%}">بازگشت</a>
+<form method="POST" action="">
+    {% csrf_token %}
+    <p> نام: {{form.Name}}</p>
+    <p> نام خانوداگی : {{form.family}}</p>
+    <p> سن: {{form.age}}</p>
+    <p> کد ملی: {{form.cod}} </p>
+    <input class="button" type="submit" value="save">
+</form>
+{% endblock content %}

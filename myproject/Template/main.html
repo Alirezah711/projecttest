@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Project test">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Project test</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Open+Sans:ital,wght@0,700;1,600;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+        
+        p {
+            color: #ffffff;
+            font-family: BalooBhaijaan, sans-serif;
+            font-weight: 600;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #cdfdff;
+            font-family: BalooBhaijaan, sans-serif;
+            font-weight: 600;
+            padding-top: 10px;
+            margin: 10px;
+        }
+        
+        h1,
+        h2 {
+            text-align: right;
+            font-weight: 100;
+            margin-right: 10px;
+        }
+        
+        body,
+        h1,
+        h2 {
+            margin: 0;
+            background: linear-gradient(45deg, #49a09d, #5f2c82);
+            font-family: 'BalooBhaijaan', sans-serif;
+            font-weight: 100;
+        }
+        
+        .container {
+            max-width: 650px;
+            margin: auto;
+            top: 50%;
+            left: 50%;
+            -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+            box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+        }
+        
+        table {
+            width: 800px;
+            border-collapse: collapse;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        th,
+        td {
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: rgb(255, 255, 255);
+        }
+        
+        th {
+            text-align: right;
+        }
+        
+        thead,
+        th {
+            background-color: #55608f;
+        }
+        
+        tbody,
+        tr :hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        
+        td {
+            position: relative;
+            text-align: right;
+        }
+        
+        td:hover:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -9999px;
+            bottom: -9999px;
+            background-color: rgba(255, 255, 255, 0.089);
+            z-index: -1;
+        }
+        
+        input {
+            outline: none;
+            border-radius: 4px;
+            display: inline-block;
+            padding: 3px 8px;
+            margin: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        {% block content %} {% endblock content %}
+    </div>
+
+</body>
+
+
+</html>
