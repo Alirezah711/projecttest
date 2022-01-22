@@ -1,10 +1,7 @@
-from multiprocessing import context
-from django.forms import fields_for_model
 from django.views.generic.list import ListView
 from .models import User
 from django.views.generic.edit import CreateView,UpdateView,DeleteView
 from django.urls import reverse_lazy
-from django.shortcuts import render
 
 class UserView(ListView):
  model =User
